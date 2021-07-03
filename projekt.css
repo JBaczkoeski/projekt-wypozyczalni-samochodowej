@@ -1,0 +1,28 @@
+.panel-body {
+    padding: 0px;
+}
+
+.col-sm-2 {
+    width: 9.667%;
+	position: relative;
+	right: 46px;
+    bottom: 6px;
+}
+.row {
+    position: relative;
+    bottom: 40px;
+}
+.menu {
+top: 6px;
+right: -30px;
+}
+.menu2{
+	position: relative;
+	bottom: 6px;
+}
+.formularz{
+	width: 15%;
+}
+.menu3{
+	right: 80px;
+}
