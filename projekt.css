@@ -1,28 +1,28 @@
-.panel-body {
-    padding: 0px;
+
+.form-control[type=date]::-webkit-inner-spin-button, 
+.form-control[type=date]::-webkit-clear-button,
+.form-control[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
-.col-sm-2 {
-    width: 9.667%;
-	position: relative;
-	right: 46px;
-    bottom: 6px;
-}
-.row {
+.form-control[type=date]::-webkit-calendar-picker-indicator {
+    color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
     position: relative;
-    bottom: 40px;
+    z-index: 1;
+    transform: translateX(16px);
+    cursor: pointer;
 }
-.menu {
-top: 6px;
-right: -30px;
+
+.z-index-1 {
+    position: relative;
+    z-index: -1;
 }
-.menu2{
-	position: relative;
-	bottom: 6px;
-}
-.formularz{
-	width: 15%;
-}
-.menu3{
-	right: 80px;
+
+
+.form-control:focus {
+    outline: 0 !important;
+    border-color: initial;
+    box-shadow: none;
 }
