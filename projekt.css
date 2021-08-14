@@ -26,3 +26,6 @@
     border-color: initial;
     box-shadow: none;
 }
+.bg-gray {
+    background-color:#595a5e;
+}
