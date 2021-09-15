@@ -11,13 +11,13 @@ include ('navbar.php');
 </head>
 <body>
 <div class="container-fluid ">
-	<div class="row">
+	<div class="row bg-white">
 		<div class="container col-12 bg-home">
 			<div class="row">	
 				<div class="container col-xl-3  text-center mt-3 order-first shadow col-md-3 col-sm-12">	
-					<h5>Sprawdź czy w twoim mieście jest auto którego szukasz</h5>
+					<h2>Sprawdź czy w twoim mieście jest auto którego szukasz</h2>
 						<form>
-							<select id="inputState" class="form-control ">
+							<select id="inputState" class="form-control h4">
 								<option selected disabled>Miasto</option>
 							</select>
 							<div class="input-group">
@@ -30,9 +30,9 @@ include ('navbar.php');
             				</div>
 							<input class="variant_checkbox" name="start_finish_location" value="1" id="start_finish_location" type="checkbox">
 							<i></i><input value="0" name="start_finish_location" type="hidden"><label for="start_finish_location" class="var_checkbox h6">
-								Chcę zwrócić samochód w innym miejscu innym niż odbiór
+								<h6>Chcę zwrócić samochód w innym miejscu innym niż odbiór</h6>
 							</label>
-							<h5>Zwrot</h5>
+							<h3>Zwrot</h3>
 							<div class="input-group">
                 				<input class="form-control py-2 border-right-0 border" type="date" value="date1" id="example-input" placeholder="Wybierz datę">
                					<span class="input-group-append ml-n4 z-index-1">
@@ -41,20 +41,17 @@ include ('navbar.php');
                     			</button>
                 				</span>
             				</div><br></br>
-							<button type="submit" class="btn btn-primary">Sprawdź</button>
+							<button type="submit" class="btn btn-primary btn-lg">Sprawdź</button>
 							
 						</form>
 				</div>
-				<div class="container col-9 mt-3 d-none d-md-block bg-home">
+				<div class="container col-9 mt-3 d-none d-md-block ">
 					<div class="row">						
 						<div class="container col-6">
 						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 								<img src="https://cdn.pixabay.com/photo/2017/06/29/09/25/car-2453605_960_720.jpg" class="d-block w-100" alt="...">
-								</div>
-								<div class="carousel-item">
-								<img src="https://cdn.pixabay.com/photo/2018/11/17/18/58/shelby-3821716_960_720.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
 								<img src="https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg" class="d-block w-100" alt="...">
@@ -70,14 +67,11 @@ include ('navbar.php');
 							</a>
 							</div>
 						</div>
-						<div class="container col-6 bg-home">
+						<div class="container col-6">
 						<div id="carouselExampleControlss" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active ">
 								<img src="https://cdn.pixabay.com/photo/2017/06/29/09/25/car-2453605_960_720.jpg" class="d-block w-100 " alt="...">
-								</div>
-								<div class="carousel-item">
-								<img src="https://cdn.pixabay.com/photo/2018/11/17/18/58/shelby-3821716_960_720.jpg" class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
 								<img src="https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg" class="d-block w-100" alt="...">
@@ -95,12 +89,12 @@ include ('navbar.php');
 						</div>
 					</div>
 				</div>
-				<div class="container col-12  shadow  mb-3 mt-2 bg-home">	
+				<div class="container col-12  shadow  mb-3 mt-2  bg-grey text-white p-5">	
 					<div class="row">
 						<div class="container col-12 text-center mb-5">
 							<h2>Co nas wyróżnia</h2>
 						</div>
-						<div class="container col-3 text-center h5 mb-3">
+						<div class="container col-3 text-center h3 mb-3">
 						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-clock-history img-fluid" viewBox="0 0 16 16">
   							<path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
   							<path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
@@ -108,7 +102,7 @@ include ('navbar.php');
 						</svg><br></br>
 						Szybka, bezpłatna rezerwacja online, bez konieczności podawania danych karty
 						</div>
-						<div class="container col-3 text-center h5 mb-3">
+						<div class="container col-3 text-center h3 mb-3">
 						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-clipboard-check img-fluid" viewBox="0 0 16 16">
 							<path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
 							<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
@@ -116,7 +110,7 @@ include ('navbar.php');
 						</svg><br></br>
 							nowe i bezpieczne samochody
 						</div>
-						<div class="container col-3 text-center h5 mb-3">
+						<div class="container col-3 text-center h3 mb-3">
 						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-clipboard-x img-fluid" viewBox="0 0 16 16">
 							<path fill-rule="evenodd" d="M6.146 7.146a.5.5 0 0 1 .708 0L8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 0 1 0-.708z"/>
 							<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
@@ -224,11 +218,11 @@ include ('navbar.php');
 					</div>
 				<div class="container col-12 mt-5 mb-4 text-center d-none d-sm-block bg-home">	
 					<div class="row">
-						<div class="container col-12 text-center h1">
+						<div class="container col-12 text-center h1 mb-5">
 							Aktualności
 						</div>
 							<?php
-							for( $x = 1; $x <= 4; $x++ ){
+							for( $x = 1; $x <= 2; $x++ ){
 							echo'
 						<div class="container   col-auto mb-4">
 							<div class="card" style="width: 38rem;">
