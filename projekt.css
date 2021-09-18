@@ -27,5 +27,9 @@
     box-shadow: none;
 }
 .bg-gray {
-    background-color:#595a5e;
+    background-color:#343a40;
+    
+}
+.bg-lb{
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/07/23/24/grey-2609109_960_720.jpg);
 }

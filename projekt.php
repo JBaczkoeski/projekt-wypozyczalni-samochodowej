@@ -89,8 +89,8 @@ include ('navbar.php');
 						</div>
 					</div>
 				</div>
-				<div class="container col-12  shadow  mb-3 mt-2  bg-grey text-white p-5">	
-					<div class="row">
+				<div class="container col-12  shadow  mb-3 mt-2  bg-grey text-white p-5 bg-gray">	
+					<div class="row ">
 						<div class="container col-12 text-center mb-5">
 							<h2>Co nas wyróżnia</h2>
 						</div>
