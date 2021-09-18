@@ -15,7 +15,7 @@
           <a class="nav-link h5" href="car.php">Samochody</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link h5" href="#">Wyślij Wiadomość</a>
+          <a class="nav-link h5" href="wiadomości.php">Wyślij Wiadomość</a>
         </li>
 		<li class="nav-item">
           <a class="nav-link h5" href="#">O Firmie</a>

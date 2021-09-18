@@ -12,8 +12,9 @@ include ('navbar.php');
         <body>
             <div id="container-fluid">
                 <div class="row">
-
-                
+                    <div class="container col-8 bg-gray text-white text-center">
+                        aaa
+                    </div>
                 </div>
             </div>
         </body>
