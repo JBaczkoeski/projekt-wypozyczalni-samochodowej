@@ -23,10 +23,10 @@
           <a class="nav-link h5" href="#">O Firmie</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link h5" href="#">Zaloguj</a>
+          <a class="nav-link h5" href="logowanie.php">Zaloguj</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link h5" href="#">Zarejestruj się</a>
+          <a class="nav-link h5" href="rejestracja.php">Zarejestruj się</a>
         </li>
   </div>
   </div>
