@@ -21,7 +21,7 @@ include ('navbar.php');
 								<option selected disabled>Miasto</option>
 							</select>
 							<div class="input-group">
-                				<input class="form-control py-2 border-right-0 border" type="date" value="date1" id="example-input" placeholder="Wybierz datę">
+                				<input class="form-control py-2 border-right-0 border" type="date" value="datestart" id="example-input" placeholder="Wybierz datę">
                					<span class="input-group-append ml-n4 z-index-1">
                     			<button class="btn btn-light border-left-0 border bg-white">
                         			<i class="fa fa-calendar-alt"></i>
@@ -34,7 +34,7 @@ include ('navbar.php');
 							</label>
 							<h3>Zwrot</h3>
 							<div class="input-group">
-                				<input class="form-control py-2 border-right-0 border" type="date" value="date1" id="example-input" placeholder="Wybierz datę">
+                				<input class="form-control py-2 border-right-0 border" type="date" value="dateend" id="example-input" placeholder="Wybierz datę">
                					<span class="input-group-append ml-n4 z-index-1">
                     			<button class="btn btn-light border-left-0 border bg-white">
                         			<i class="fa fa-calendar-alt"></i>
@@ -160,7 +160,7 @@ include ('navbar.php');
 													</li>
 												</ul>
 												<div class="card-body">
-													<a href="#" class="card-link">Wynajmij</a>
+													<a href="oferta.php" class="card-link">Wynajmij</a>
 												</div>
 										</div>
 									</div>

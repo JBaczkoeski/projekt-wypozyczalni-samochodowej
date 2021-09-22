@@ -94,7 +94,7 @@ include ('navbar.php');
 												</li>
 											</ul>
 				    					<div class="card-body">
-		    						<a href="#" class="card-link">Wynajmij</a>
+		    						<a href="oferta.php" class="card-link">Wynajmij</a>
 								</div>
 							</div>
 						</div>
