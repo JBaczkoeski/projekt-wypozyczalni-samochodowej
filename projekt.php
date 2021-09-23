@@ -57,34 +57,15 @@ include ('navbar.php');
 								<img src="https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg" class="d-block w-100" alt="...">
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only"></span>
-							</a>
-							<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only"></span>
-							</a>
 							</div>
 						</div>
 						<div class="container col-6">
 						<div id="carouselExampleControlss" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
-								<div class="carousel-item active ">
-								<img src="https://cdn.pixabay.com/photo/2017/06/29/09/25/car-2453605_960_720.jpg" class="d-block w-100 " alt="...">
-								</div>
-								<div class="carousel-item">
+								<div class="carousel-item active">
 								<img src="https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg" class="d-block w-100" alt="...">
 								</div>
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleControlss" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only"></span>
-							</a>
-							<a class="carousel-control-next" href="#carouselExampleControlss" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only"></span>
-							</a>
 							</div>
 						</div>
 					</div>
