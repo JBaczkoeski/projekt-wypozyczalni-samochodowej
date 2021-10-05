@@ -67,7 +67,7 @@ include ('navbar.php');
             <div class="container col-10  pt-5">
                 <div class="row">
                     <?php
-						for( $x = 1; $x <= 16; $x++ ){
+						for( $x = 1; $x <= 20; $x++ ){
 						    echo'
 							    <div class="container col-3 order-first col-xl-3 col-sm-6 col-md-6">
 									<div class="card" style="width: 23rem;">

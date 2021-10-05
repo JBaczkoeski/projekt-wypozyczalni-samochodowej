@@ -1,6 +1,6 @@
 	<?php
   echo'
-  <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
   <div class="container col-7">
   <a class="text-white h2" href="projekt.php">Twój wymarzony samochód</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
