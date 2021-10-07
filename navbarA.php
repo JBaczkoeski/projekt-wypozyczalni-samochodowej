@@ -1,4 +1,6 @@
 <?php
+include ('dbconn.php');
+
   echo'
   <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
   <div class="container col-7">

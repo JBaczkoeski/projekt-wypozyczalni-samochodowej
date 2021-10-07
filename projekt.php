@@ -1,6 +1,7 @@
 <?php
 include ('bt.php');
 include ('navbar.php');
+include ('dbconn.php');
 ?>
 <doctype html>
 <html>

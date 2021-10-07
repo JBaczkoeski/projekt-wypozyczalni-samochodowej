@@ -1,6 +1,7 @@
 <?php
 include ('bt.php');
 include ('navbarA.php');
+include ('dbconn.php')
 ?>
 <html>
 <head>
@@ -17,7 +18,7 @@ include ('navbarA.php');
 						Dodaj ofertę
 					</div>
 					<div class="container col-10 ">
-						<form>
+						<form method="post">
 							<div class="row justify-content-center text-center">
 								<div class="mb-4 mt-4 col-3">
 								  <label for="formFile" class="form-label">Zdjęcie samochodu</label>
