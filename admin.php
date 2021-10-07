@@ -31,7 +31,7 @@ include ('navbarA.php');
                     <button class="btn btn-light" type="submit ">Szukaj</button>
                 </div>
                 <div class="container col-12 h5 mt-5 bt bt-lg bt-success text-white text-center">
-                    <button class="btn btn-light" type="submit ">Dodaj ofertę</button>
+					<a href="dodawanie.php" role="button" class="btn btn-success btn-lg">Dodaj ofertę</a>
                 </div>
                 </div>
             </form>          
@@ -66,7 +66,7 @@ include ('navbarA.php');
 												</li>
 											</ul>
 				    					<div class="card-body">
-		    						<a href="oferta.php" class="card-link">Edytuj</a>
+		    						<a href="edycja.php" class="card-link">Edytuj</a>
                                     <a href="oferta.php" class="card-link">Usuń</a>
 								</div>
 							</div>
