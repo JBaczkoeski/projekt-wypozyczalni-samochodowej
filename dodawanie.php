@@ -88,7 +88,7 @@ include ('crud.php');
 							</div>
 							<div class="row justify-content-center text-center">
 								<div class="mb-4 col-3">
-									<button class="btn btn-success bt-lg" type="submit">Dodaj</button>
+									<input class="btn btn-success bt-lg" type="submit">
 								</div>
 							</div>
 						</form>

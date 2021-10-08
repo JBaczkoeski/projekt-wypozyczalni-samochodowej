@@ -22,10 +22,16 @@ if ($conn->query($sql) === TRUE) {
     $wyn = mysqli_insert_id($conn);
 }
 //drugie zapytanie dodające zdjęcie//
-$conn = new mysqli($hostname, $username, $password, $dbname) or die('Brak połączenia z bazą danych');
 $sql="INSERT INTO `photos`(`id`, `offer_id`, `article_id`, `patch`) VALUES ('','$wyn','','$zdj')";
-$conn=$conn->query($sql);
 
 $conn = new mysqli($hostname, $username, $password, $dbname);
-mysqli_close($conn);
+if ($conn->multi_query($sql) === TRUE) {
+    echo "Udało się dodać nową ofertę :)";
+  }
+  else
+  {
+      echo "nie udało się dodać oferty";
+  }
+
+$conn->close();
 ?>
