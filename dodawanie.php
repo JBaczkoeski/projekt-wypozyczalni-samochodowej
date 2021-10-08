@@ -1,19 +1,7 @@
 <?php
 include ('bt.php');
 include ('navbarA.php');
-include ('dbconn.php');
-
-$zdj=$_POST['zdjecie'];
-$skrzynia=$_POST['skrzynia'];
-$paliwo=$_POST['paliwo'];
-$liczba=$_POST['liczba'];
-$rok=$_POST['rokprod'];
-
-echo($zdj);
-echo($skrzynia);
-echo($paliwo);
-echo($liczba);
-echo($rok);
+include ('crud.php');
 ?>
 <html>
 <head>
@@ -35,6 +23,25 @@ echo($rok);
 								<div class="mb-4 mt-4 col-3">
 								  <label for="formFile" class="form-label">Zdjęcie samochodu</label>
 								  <input class="form-control" type="file" name="zdjecie">
+								</div>
+							</div>
+							<div class="row justify-content-center text-center">
+								<div class="mb-4 col-3">
+									<select class="form-select" name="prod" aria-label="Default select example">
+									  <option selected disabled>Producent</option>
+									  <option value="1">Rolls-Royce</option>
+									  <option value="2">Ferrari</option>
+									  <option value="3">Porsche</option>
+									  <option value="4">Mercedes</option>
+									  <option value="5">BMW</option>
+									  <option value="6">Lamborghini</option>
+									  <option value="7">Audi</option>
+									</select>
+								</div>
+							</div>
+							<div class="row justify-content-center text-center">
+								<div class="mb-4 col-3">
+									<input class="form-control" name="mod" placeholder="Model" type="text">
 								</div>
 							</div>
 							<div class="row justify-content-center text-center">
@@ -66,7 +73,17 @@ echo($rok);
 							</div>
 							<div class="row justify-content-center text-center">
 								<div class="mb-4 col-3">
-									<input class="form-control" name="rokprod" placeholder="rok pordukcji" type="number">
+									<input class="form-control" name="moc" placeholder="Moc" type="number">
+								</div>
+							</div>
+							<div class="row justify-content-center text-center">
+								<div class="mb-4 col-3">
+									<input class="form-control" name="rokprod" placeholder="rok pordukcji" type="date">
+								</div>
+							</div>
+							<div class="row justify-content-center text-center">
+								<div class="mb-4 col-3">
+									<input class="form-control" name="cena" placeholder="Cena" type="number">
 								</div>
 							</div>
 							<div class="row justify-content-center text-center">
