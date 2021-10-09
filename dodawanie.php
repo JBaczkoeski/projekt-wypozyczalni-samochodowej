@@ -1,7 +1,6 @@
 <?php
 include ('bt.php');
 include ('navbarA.php');
-include ('crud.php');
 ?>
 <html>
 <head>
@@ -18,7 +17,7 @@ include ('crud.php');
 						Dodaj ofertę
 					</div>
 					<div class="container col-10 ">
-						<form method="post">
+						<form method="post" action="crud.php">
 							<div class="row justify-content-center text-center">
 								<div class="mb-4 mt-4 col-3">
 								  <label for="formFile" class="form-label">Zdjęcie samochodu</label>
@@ -88,7 +87,7 @@ include ('crud.php');
 							</div>
 							<div class="row justify-content-center text-center">
 								<div class="mb-4 col-3">
-									<input class="btn btn-success bt-lg" type="submit">
+									<input href="dodawanie.php" class="btn btn-success bt-lg" type="submit">
 								</div>
 							</div>
 						</form>

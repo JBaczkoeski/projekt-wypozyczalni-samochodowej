@@ -4,7 +4,7 @@ $username="root";
 $password="";
 $dbname="wypozyczalnia";
 $conn = new mysqli($hostname, $username, $password, $dbname) or die('Brak połączenia z bazą danych');
-
+//zmienne w których są zapisane wartości z formularza//
 $zdj=$_POST['zdjecie'];
 $skrzynia=$_POST['skrzynia'];
 $paliwo=$_POST['paliwo'];
