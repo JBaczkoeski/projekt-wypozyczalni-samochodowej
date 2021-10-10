@@ -2,7 +2,7 @@
 include ('bt.php');
 include ('navbarA.php');
 include ('dbconn.php');
-include ('read.php');
+include ('read.php')
 ?>
 <html>
 <head>
@@ -20,9 +20,16 @@ include ('read.php');
             <form>
                 <div class="row">
                 <div class="container col-6 h5 text-white text-center">
-                    <select id="inputState" class="form-control ">
-						<option selected disabled>Marka</option>
-					</select>
+				<select class="form-select" aria-label="Default select example">
+					<option selected disabled>Producent</option>
+					<option value="1">Rolls-Royce</option>
+					<option value="2">Ferrari</option>
+					<option value="3">Porsche</option>
+					<option value="7">Audi</option>
+					<option value="4">Mercedes</option>
+					<option value="5">BMW</option>
+					<option value="6">Lamborghini</option>
+				</select>
                 </div>
                 <div class="container col-6 h5 text-white text-center">
                     <select id="inputState" class="form-control ">
@@ -42,21 +49,39 @@ include ('read.php');
                 <div class="row">
                     <?php						
 						foreach($results as $key => $wyn){
-						    echo"
+						    ?>
 							    <div class='container col-3 order-first col-xl-3 col-sm-6 col-md-6'>
 									<div class='card' style='width: 23rem;'>
-										<img src='images/{$photo['patch']}' class='card-img-top' alt='...'>
+										<img src='images/<?php echo $photo;?>' class='card-img-top' alt='...'>
 											<div class='card-body'>
-												<h5 class='card-title'>{$wyn['producer_id']}  {$wyn['model']}</h5>
+												<h5 class='card-title'><?php echo $wyn['producer_id'];echo" "  ;echo $wyn['model']?></h5>
 											</div>
 											<ul class='list-group list-group-flush'>
 												<li class='list-group-item'>
 												<img style='max-width:40px' alt='benzyna' src='https://kaizenrent.pl/images/other-icon-2.png'>
-												{$wyn['fuel_id']}
+												<?php  
+													if($wyn['fuel_id'] == 1)
+													{
+														echo"Benzyna";
+													}
+													else
+													{
+														echo"Diesel";
+													}
+												?>
 												</li>
 												<li class='list-group-item'>
 												<img style='max-width:40px' alt='benzyna' src='https://kaizenrent.pl/images/car-manual-icon.png'>
-												{$wyn['transsmision_id']} 
+												<?php 
+													if($wyn['transsmision_id'] == 1)
+													{
+ 														echo"Automatyczna";
+													}
+													else
+													{
+														echo"Manualna";
+													}
+												 ?> 
 												</li>
 												<li class='list-group-item'>
 													<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' class='bi bi-people-fill' viewBox='0 0 16 16'>
@@ -64,7 +89,7 @@ include ('read.php');
 														<path fill-rule='evenodd' d='M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z'/>
 														<path d='M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z'/>
 													</svg>
-													{$wyn['number_of_seat']}
+													<?php echo $wyn['number_of_seat']?>
 												</li>
 											</ul>
 				    					<div class='card-body'>
@@ -73,8 +98,8 @@ include ('read.php');
 								</div>
 							</div>
 						</div>
-						";}
-	    			
+					<?php
+						;}	
 			       ?>
                 </div>
             </div>

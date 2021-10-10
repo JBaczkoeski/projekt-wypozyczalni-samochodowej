@@ -1,15 +1,16 @@
 <?php
+//Pobranie danych auta//
 $sql="SELECT * FROM offers";
 $results = $conn->query($sql);
-
-if ($conn->query($sql) === TRUE) {
-    $wyn = mysqli_insert_id($conn);
-    echo($wyn);
-}
-
-$sql="SELECT * FROM `photos` WHERE offer_id='$wyn'";
+//pobranie id auta//
+$sql = "SELECT `id` FROM offers";
+$rezultat = $conn->query($sql);
+$row = mysqli_fetch_assoc($rezultat);
+$wyn = $row['id'];
+//pobranie zdjęcia auta//
+$sql="SELECT * FROM `photos` WHERE offer_id= '$wyn'";
 $zdjecie = $conn->query($sql);
-foreach($zdjecie as $key => $photo){   
-}
+$raw = mysqli_fetch_assoc($zdjecie);
+$photo = $raw['patch'];
 $conn->close();
 ?>
