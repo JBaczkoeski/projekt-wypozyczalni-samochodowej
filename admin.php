@@ -1,8 +1,8 @@
 <?php
 include ('bt.php');
 include ('navbarA.php');
-include ('dbconn.php');
-include ('read.php')
+include ('read.php');
+
 ?>
 <html>
 <head>
@@ -49,12 +49,64 @@ include ('read.php')
                 <div class="row">
                     <?php						
 						foreach($results as $key => $wyn){
+							include ('dbconn.php');
+							$ids=$wyn['id'];							
+							$sql = ("SELECT * FROM `photos` WHERE offer_id= '$ids'");
+							$results = $conn -> query($sql);
+							$dys = $results->fetch_assoc();
 						    ?>
 							    <div class='container col-3 order-first col-xl-3 col-sm-6 col-md-6'>
 									<div class='card' style='width: 23rem;'>
-										<img src='images/<?php echo $photo;?>' class='card-img-top' alt='...'>
+										<img src='images/<?php echo $dys['patch'];?>' class='card-img-top img-fluid img-responsive' alt='...'>
 											<div class='card-body'>
-												<h5 class='card-title'><?php echo $wyn['producer_id'];echo" "  ;echo $wyn['model']?></h5>
+												<h5 class='card-title'><?php 
+												if($wyn['producer_id']==1)
+												{
+													echo"Rolls-Royce";
+												}
+												else
+												{
+													if($wyn['producer_id']==2)
+													{
+														echo"Ferrari";
+													}
+													else
+													{
+														if($wyn['producer_id']==3)
+														{
+															echo"Porsche";
+														}	
+														else
+														{
+															if($wyn['producer_id']==4)
+														{
+															echo"Mercedes";
+														}
+														else
+														{
+															if($wyn['producer_id']==5)
+														{
+															echo"BMW";
+														}
+														else
+														{
+															if($wyn['producer_id']==6)
+															{
+																echo"Lamborghini";
+															}
+															else
+															{
+																if($wyn['producer_id']==7)
+															{
+																echo"Audi";
+															}	
+															}
+														}	
+														}	
+														}
+													}
+												}
+												;echo" "  ;echo $wyn['model']?></h5>
 											</div>
 											<ul class='list-group list-group-flush'>
 												<li class='list-group-item'>
