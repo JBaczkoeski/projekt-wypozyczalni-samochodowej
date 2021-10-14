@@ -2,6 +2,7 @@
 include ('bt.php');
 include ('navbar.php');
 include ('dbconn.php');
+include ('read.php');
 ?>
 <doctype html>
 <html>
@@ -107,47 +108,115 @@ include ('dbconn.php');
 						<li class="nav-item" role="presentation">
 							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#osobowe" role="tab" aria-controls="home" aria-selected="true">Osobowe</a>
 						</li>
-						<li class="nav-item" role="presentation">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#dostawcze" role="tab" aria-controls="profile" aria-selected="false">Dostawcze</a>
-						</li>
 					</ul>
 					<div class="tab-content mt-4 ml-5" id="myTabContent">
 						<div class="tab-pane fade show active" id="osobowe" role="tabpanel" aria-labelledby="home-tab">
 								<div class="row">
-								<?php
-								for( $x = 1; $x <= 4; $x++ ){
-								echo'
-									<div class="container col-3 order-first col-xl-3 col-sm-6 col-md-6">
-										<div class="card" style="width: 23rem;">
-												<img src="https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_960_720.jpg" class="card-img-top" alt="...">
-												<div class="card-body">
-													<h5 class="card-title">Audi A5</h5>
-												</div>
-												<ul class="list-group list-group-flush">
-													<li class="list-group-item">
-													<img style="max-width:40px" alt="benzyna" src="https://kaizenrent.pl/images/other-icon-2.png">
-														Benzyna
-													</li>
-													<li class="list-group-item">
-													<img style="max-width:40px" alt="benzyna" src="https://kaizenrent.pl/images/car-manual-icon.png">
-														Automatyczna 
-													</li>
-													<li class="list-group-item">
-														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-															<path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-															<path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
-															<path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-														</svg>
-														5 Osobowy
-													</li>
-												</ul>
-												<div class="card-body">
-													<a href="oferta.php" class="card-link">Wynajmij</a>
-												</div>
-										</div>
-									</div>
-									';}
-									?>																										
+								<?php						
+						foreach($results as $key => $wyn){
+							include ('dbconn.php');
+							$ids=$wyn['id'];							
+							$sql = ("SELECT * FROM `photos` WHERE offer_id= '$ids'");
+							$results = $conn -> query($sql);
+							$dys = $results->fetch_assoc();
+						    ?>
+							    <div class='container col-3 order-first col-xl-3 col-sm-6 col-md-6'>
+									<div class='card' style='width: 23rem;'>
+										<img src='images/<?php echo $dys['patch'];?>' class='card-img-top img-fluid img-responsive' alt='...'>
+											<div class='card-body'>
+												<h5 class='card-title'><?php 
+												if($wyn['producer_id']==1)
+												{
+													echo"Rolls-Royce";
+												}
+												else
+												{
+													if($wyn['producer_id']==2)
+													{
+														echo"Ferrari";
+													}
+													else
+													{
+														if($wyn['producer_id']==3)
+														{
+															echo"Porsche";
+														}	
+														else
+														{
+															if($wyn['producer_id']==4)
+														{
+															echo"Mercedes";
+														}
+														else
+														{
+															if($wyn['producer_id']==5)
+														{
+															echo"BMW";
+														}
+														else
+														{
+															if($wyn['producer_id']==6)
+															{
+																echo"Lamborghini";
+															}
+															else
+															{
+																if($wyn['producer_id']==7)
+															{
+																echo"Audi";
+															}	
+															}
+														}	
+														}	
+														}
+													}
+												}
+												;echo" "  ;echo $wyn['model']?></h5>
+											</div>
+											<ul class='list-group list-group-flush'>
+												<li class='list-group-item'>
+												<img style='max-width:40px' alt='benzyna' src='https://kaizenrent.pl/images/other-icon-2.png'>
+												<?php  
+													if($wyn['fuel_id'] == 1)
+													{
+														echo"Benzyna";
+													}
+													else
+													{
+														echo"Diesel";
+													}
+												?>
+												</li>
+												<li class='list-group-item'>
+												<img style='max-width:40px' alt='benzyna' src='https://kaizenrent.pl/images/car-manual-icon.png'>
+												<?php 
+													if($wyn['transsmision_id'] == 1)
+													{
+ 														echo"Automatyczna";
+													}
+													else
+													{
+														echo"Manualna";
+													}
+												 ?> 
+												</li>
+												<li class='list-group-item'>
+													<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' class='bi bi-people-fill' viewBox='0 0 16 16'>
+														<path d='M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'/>
+														<path fill-rule='evenodd' d='M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z'/>
+														<path d='M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z'/>
+													</svg>
+													<?php echo $wyn['number_of_seat']?>
+												</li>
+											</ul>
+				    					<div class='card-body'>
+									<a href="oferta.php" class="card-link">Wynajmij</a>
+								</div>
+							</div>
+						</div>
+					<?php
+						;}	
+			       ?>																										
 								</div>
 							
 						</div>
