@@ -1,6 +1,8 @@
 <?php
 include ('bt.php');
 include ('navbar.php');
+include ('dbconn.php');
+include ('login.php');
 ?>
 <doctype html>
     <html>
@@ -15,16 +17,16 @@ include ('navbar.php');
                             <div class="col-12 text-center h2 mb-5 pt-5">
                                 Zaloguj
                             </div>
-                            <form class="form col-6">
+                            <form method="post" class="form col-6">
                                 <div class="row">
                                     <div class="col-12 mb-4">
-                                        <input type="text" class="form-control" placeholder="E-mail">
+                                        <input type="text" name="email" class="form-control" placeholder="E-mail">
                                     </div>                            
                                     <div class="col-12 mb-4">
-                                        <input type="text" class="form-control" placeholder="Hasło">
+                                        <input type="password" name="haslo" class="form-control" placeholder="Hasło">
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <button type="submit" class="btn btn-success">Zaloguj</button>
+                                        <button type="submit" name="zaloguj" class="btn btn-success">Zaloguj</button>
                                     </div>
                                 </div>
                             </form>

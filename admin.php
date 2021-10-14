@@ -55,7 +55,7 @@ include ('read.php');
 							$results = $conn -> query($sql);
 							$dys = $results->fetch_assoc();
 						    ?>
-							    <div class='container col-3 order-first col-xl-3 col-sm-6 col-md-6'>
+							    <div class='container col-3 order-first col-xl-3 col-sm-6 col-md-6 mb-3'>
 									<div class='card' style='width: 23rem;'>
 										<img src='images/<?php echo $dys['patch'];?>' class='card-img-top img-fluid img-responsive' alt='...'>
 											<div class='card-body'>

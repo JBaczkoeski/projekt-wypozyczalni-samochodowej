@@ -1,6 +1,7 @@
 <?php
 include ('bt.php');
 include ('navbar.php');
+include ('zarejestruj.php');
 ?>
 <doctype html>
     <html>
@@ -15,25 +16,25 @@ include ('navbar.php');
                             <div class="col-12 text-center h2 mb-5 pt-5">
                                 Zarejestruj
                             </div>
-                            <form class="form col-6">
+                            <form method="post" action="zarejestruj.php" class="form col-6">
                                 <div class="row">
                                     <div class="col-12 mb-4">
-                                        <input type="text" class="form-control" placeholder="E-mail">
+                                        <input type="text" name="email" class="form-control" placeholder="E-mail">
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <input type="text" class="form-control" placeholder="Imię">
+                                        <input type="text" name="imie" class="form-control" placeholder="Imię">
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <input type="text" class="form-control" placeholder="Nazwisko">
+                                        <input type="text" name="nazwisko" class="form-control" placeholder="Nazwisko">
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <input type="text" class="form-control" placeholder="Hasło">
+                                        <input type="password" name="haslo1" class="form-control" placeholder="Hasło">
                                     </div>
 									<div class="col-12 mb-4">
-                                        <input type="text" class="form-control" placeholder="Powtórz hasło">
+                                        <input type="password" name="haslo2" class="form-control" placeholder="Powtórz hasło">
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <button type="submit" class="btn btn-success">Zarejestruj</button>
+                                        <button type="submit" name="rejestracja" class="btn btn-success">Zarejestruj</button>
                                     </div>
                                 </div>
                             </form>
