@@ -1,6 +1,6 @@
 <?php
-include ('bt.php');
-include ('navbar.php');
+include 'common\navbar.php';
+include 'common\bt.php';
 ?>
 <doctype html>
     <html>
@@ -51,6 +51,6 @@ include ('navbar.php');
     </html>
 <div class="fixed-bottom">
 <?php
-include ('footer.php');
+include 'common\footer.php';
 ?>
 </div>

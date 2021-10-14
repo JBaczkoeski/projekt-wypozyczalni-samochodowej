@@ -1,6 +1,6 @@
 <?php
-include ('bt.php');
-include ('navbarA.php');
+include 'common\bt.php';
+include 'common\navbarA.php';
 ?>
 <html>
 <head>
@@ -42,5 +42,5 @@ include ('navbarA.php');
 </body>
 </html>
 <?php
-include ('footer.php');
+include 'common\footer.php';
 ?>

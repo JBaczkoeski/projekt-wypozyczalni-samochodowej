@@ -1,8 +1,8 @@
 <?php
-include ('bt.php');
-include ('navbar.php');
-include ('dbconn.php');
-include ('login.php');
+include 'common\navbar.php';
+include 'common\bt.php';
+include 'common\dbconn.php';
+include 'common\login.php';
 ?>
 <doctype html>
     <html>
@@ -36,6 +36,6 @@ include ('login.php');
     </html>
 <div class="fixed-bottom">
 <?php
-include ('footer.php');
+include 'common\footer.php';
 ?>
 </div>

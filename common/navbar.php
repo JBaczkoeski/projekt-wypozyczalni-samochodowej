@@ -19,9 +19,6 @@
         <li class="nav-item">
           <a class="nav-link h5" href="wiadomości.php">Wyślij Wiadomość</a>
         </li>
-		<li class="nav-item">
-          <a class="nav-link h5" href="#">O Firmie</a>
-        </li>
         <li class="nav-item">
           <a class="nav-link h5" href="logowanie.php">Zaloguj</a>
         </li>

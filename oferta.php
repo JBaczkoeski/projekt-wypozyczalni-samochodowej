@@ -1,6 +1,6 @@
 <?php
-include ('bt.php');
-include ('navbar.php');
+include 'common\bt.php';
+include 'common\navbar.php';
 ?>
 <doctype html>
     <html>

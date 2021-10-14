@@ -1,8 +1,8 @@
 <?php
-include ('bt.php');
-include ('navbar.php');
-include ('dbconn.php');
-include ('read.php');
+include 'common\navbar.php';
+include 'common\bt.php';
+include 'common\read.php';
+include 'common\dbconn.php';
 ?>
 <doctype html>
 <html>
@@ -114,7 +114,7 @@ include ('read.php');
 								<div class="row">
 								<?php						
 						foreach($results as $key => $wyn){
-							include ('dbconn.php');
+							include 'common\dbconn.php';
 							$ids=$wyn['id'];							
 							$sql = ("SELECT * FROM `photos` WHERE offer_id= '$ids'");
 							$results = $conn -> query($sql);
@@ -298,5 +298,5 @@ include ('read.php');
 </body>
 </html>
 <?php 
-include ('footer.php');
+include 'common\footer.php';
 ?>

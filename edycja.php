@@ -1,7 +1,7 @@
 <?php
-include ('bt.php');
-include ('navbarA.php');
-include ('read.php')
+include 'common\bt.php';
+include 'common\navbarA.php';
+include 'common\read.php';
 ?>
 <html>
 <head>

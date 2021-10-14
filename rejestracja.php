@@ -1,7 +1,7 @@
 <?php
-include ('bt.php');
-include ('navbar.php');
-include ('zarejestruj.php');
+include 'common\navbar.php';
+include 'common\bt.php';
+include 'common\zarejestruj.php';
 ?>
 <doctype html>
     <html>
@@ -44,6 +44,6 @@ include ('zarejestruj.php');
     </html>
 <div class="fixed-bottom">
 <?php
-include ('footer.php');
+include ('common\footer.php');
 ?>
 </div>
