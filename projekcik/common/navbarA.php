@@ -17,7 +17,7 @@
           <a class="nav-link h5" href="komunikaty.php">Wiadomości</a>
         </li>
         <li class="nav-item d-flex justify-content-end">
-          <a class="nav-link h5" href="#">Wyloguj</a>
+          <a class="nav-link h5" href="projekt.php">Wyloguj</a>
         </li>
   </div>
   </div>

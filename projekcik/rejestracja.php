@@ -16,7 +16,7 @@ include 'common\zarejestruj.php';
                             <div class="col-12 text-center h2 mb-5 pt-5">
                                 Zarejestruj
                             </div>
-                            <form method="post" action="zarejestruj.php" class="form col-6">
+                            <form method="post" action="common/zarejestruj.php" class="form col-6">
                                 <div class="row">
                                     <div class="col-12 mb-4">
                                         <input type="text" name="email" class="form-control" placeholder="E-mail">

@@ -123,7 +123,7 @@ include 'common\read.php';
 												?>
 												</li>
 												<li class='list-group-item'>
-												<img style='max-width:40px' alt='benzyna' src='https://kaizenrent.pl/images/car-manual-icon.png'>
+												<img style='max-width:40px' alt='skrzynia' src='https://kaizenrent.pl/images/car-manual-icon.png'>
 												<?php 
 													if($wyn['transsmision_id'] == 1)
 													{

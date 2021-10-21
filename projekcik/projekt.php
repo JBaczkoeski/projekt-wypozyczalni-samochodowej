@@ -1,7 +1,7 @@
 <?php
 include 'common\navbar.php';
 include 'common\bt.php';
-include 'common\read.php';
+include 'common\readu.php';
 include 'common\dbconn.php';
 ?>
 <doctype html>
@@ -19,23 +19,14 @@ include 'common\dbconn.php';
 				<div class="container col-xl-3  text-center mt-3 order-first shadow col-md-3 col-sm-12">	
 					<h2>Sprawdź czy w twoim mieście jest auto którego szukasz</h2>
 						<form>
-							<select id="inputState" class="form-control h4">
-								<option selected disabled>Miasto</option>
-							</select>
-							<div class="input-group">
-                				<input class="form-control py-2 border-right-0 border" type="date" value="datestart" id="example-input" placeholder="Wybierz datę">
-               					<span class="input-group-append ml-n4 z-index-1">
-                				</span>
+							<hr class="h-10"></hr>
+							<h3>Dzień wypożyczenia</h3>
+							<div class="input-group mb-3 mt-3">
+                				<input class="form-control py-2 border-right-0 border" type="date" value="datestart" id="example-input" placeholder="Wybierz datę">               					
             				</div>
-							<input class="variant_checkbox" name="start_finish_location" value="1" id="start_finish_location" type="checkbox">
-							<i></i><input value="0" name="start_finish_location" type="hidden"><label for="start_finish_location" class="var_checkbox h6">
-								<h6>Chcę zwrócić samochód w innym miejscu innym niż odbiór</h6>
-							</label>
 							<h3>Zwrot</h3>
-							<div class="input-group">
+							<div class="input-group mb-3">
                 				<input class="form-control py-2 border-right-0 border" type="date" value="dateend" id="example-input" placeholder="Wybierz datę">
-               					<span class="input-group-append ml-n4 z-index-1">
-                				</span>
             				</div><br></br>
 							<button type="submit" class="btn btn-primary btn-lg">Sprawdź</button>
 							
