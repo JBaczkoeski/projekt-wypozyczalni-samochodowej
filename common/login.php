@@ -1,13 +1,14 @@
 <?php
 if (isset($_POST['zaloguj']))
 {
-$email=$_POST['email'];
-$haslo=$_POST['haslo'];
-$haslo1=md5($haslo);
+	$email=$_POST['email'];
+	$haslo=$_POST['haslo'];
+	$haslo1=md5($haslo);
 // sprawdzanie czy jest taki użytkownik
-if (mysqli_num_rows(mysqli_query($conn,"SELECT `email`,`password`,`admin` FROM `users` WHERE `email` = '$email' AND `password` = '$haslo1'")) > 0)
-        {   
-            echo$conn;
+	$rows = mysqli_query($conn,"SELECT `email`,`password`,`admin` FROM `users` WHERE `email` = '$email' AND `password` = '$haslo1'");
+	if (mysqli_num_rows($rows) == 1)
+		{   
+			$row = $rows->fetch_assoc();
             if($row['admin']== 1)
             {
                 header('Location: admin.php');
@@ -21,10 +22,6 @@ if (mysqli_num_rows(mysqli_query($conn,"SELECT `email`,`password`,`admin` FROM `
             
             echo "Witamy i życzymy miłego dnia :)";
             }
-        }
-        else
-        
-         echo "Wpisano złe dane.";
-    }         
-        
+        } 
+}		
 ?>

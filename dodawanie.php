@@ -6,7 +6,7 @@ include 'common\navbarA.php';
 <head>
     <meta charset="UTF-8">
 	<title>Twój wymarzony samochód</title>
-	<link rel="stylesheet" href="projekt.css">
+	<link rel="stylesheet" href="common/projekt.css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -17,7 +17,7 @@ include 'common\navbarA.php';
 						Dodaj ofertę
 					</div>
 					<div class="container col-10 ">
-						<form method="post" action="crud.php">
+						<form method="post" action="common/crud.php">
 							<div class="row justify-content-center text-center">
 								<div class="mb-4 mt-4 col-3">
 								  <label for="formFile" class="form-label">Zdjęcie samochodu</label>

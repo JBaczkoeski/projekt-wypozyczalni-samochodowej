@@ -10,7 +10,7 @@ include 'common\read.php';
 <head>
 	<meta charset="UTF-8">
 	<title>Twój wymarzony samochód</title>
-	<link rel="stylesheet" href="projekt.css">
+	<link rel="stylesheet" href="common/projekt.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -77,7 +77,7 @@ include 'common\read.php';
 							$results = $conn -> query($sql);
 							$dys = $results->fetch_assoc();
 						    ?>
-							    <div class='container col-3 order-first col-xl-3 col-sm-6 col-md-6'>
+							    <div class='container col-3 order-first col-xl-3 mb-3 col-sm-6 col-md-6'>
 									<div class='card' style='width: 23rem;'>
 										<img src='images/<?php echo $dys['patch'];?>' class='card-img-top img-fluid img-responsive' alt='...'>
 											<div class='card-body'>
@@ -167,7 +167,7 @@ include 'common\read.php';
 												</li>
 											</ul>
 				    					<div class='card-body'>
-									<a href="oferta.php" class="card-link">Wynajmij</a>
+									<a href="oferta.php?odczyt=<?php echo $wyn['id']?>" class="card-link">Wynajmij</a>
 								</div>
 							</div>
 						</div>

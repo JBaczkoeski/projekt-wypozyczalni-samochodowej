@@ -8,7 +8,7 @@ include 'common\read.php';
 <head>
     <meta charset="UTF-8">
 	<title>Twój wymarzony samochód</title>
-	<link rel="stylesheet" href="projekt.css">
+	<link rel="stylesheet" href="common/projekt.css">
 </head>
 <body>
 <div class="container-fluid">
@@ -123,7 +123,7 @@ include 'common\read.php';
 												?>
 												</li>
 												<li class='list-group-item'>
-												<img style='max-width:40px' alt='benzyna' src='https://kaizenrent.pl/images/car-manual-icon.png'>
+												<img style='max-width:40px' alt='skrzynia' src='https://kaizenrent.pl/images/car-manual-icon.png'>
 												<?php 
 													if($wyn['transsmision_id'] == 1)
 													{
@@ -145,8 +145,8 @@ include 'common\read.php';
 												</li>
 											</ul>
 				    					<div class='card-body'>
-		    						<a href='edycja.php' class='card-link'>Edytuj</a>
-                                    <a href='oferta.php' class='card-link'>Usuń</a>
+		    						<a href='edycja.php' class='card-link btn btn-warning'>Edytuj</a>
+                                    <a href='oferta.php' class='card-link btn btn-danger'>Usuń</a>
 								</div>
 							</div>
 						</div>

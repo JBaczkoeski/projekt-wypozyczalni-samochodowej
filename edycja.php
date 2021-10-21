@@ -7,7 +7,7 @@ include 'common\read.php';
 <head>
     <meta charset="UTF-8">
 	<title>Twój wymarzony samochód</title>
-	<link rel="stylesheet" href="projekt.css">
+	<link rel="stylesheet" href="common/projekt.css">
 </head>
 <body class="bg-gray">
 	<div class="container-fluid bg-gray">
