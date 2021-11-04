@@ -2,13 +2,25 @@
 include 'common\bt.php';
 include 'common\navbarA.php';
 include 'common\read.php';
-
 ?>
 <html>
 <head>
     <meta charset="UTF-8">
 	<title>Twój wymarzony samochód</title>
 	<link rel="stylesheet" href="common/projekt.css">
+	<script>
+		function potwierdzanie(){
+			var wiadomosc= confirm("Na pewno chcesz usunąć");
+			if(wiadomosc==true)
+			{
+				location.assign('delete.php');
+    			alert("Oferta została usunięta");
+			} else
+			{
+    		alert("Fajnie że jednak ta oferta zostaje");
+			}
+			}
+	</script>
 </head>
 <body>
 <div class="container-fluid">
@@ -146,7 +158,7 @@ include 'common\read.php';
 											</ul>
 				    					<div class='card-body'>
 		    						<a href='edycja.php' class='card-link btn btn-warning'>Edytuj</a>
-                                    <a href='oferta.php' class='card-link btn btn-danger'>Usuń</a>
+                                    <button onclick="potwierdzanie()" type="button" class='btn btn-danger'>Usuń</button>
 								</div>
 							</div>
 						</div>
