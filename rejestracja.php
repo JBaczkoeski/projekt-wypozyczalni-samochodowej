@@ -12,21 +12,20 @@ include 'common\zarejestruj.php';
             <script>
                 function sprawdzanie()
                 {
-                    let przycisk = document.getElementById('rejestruj');
                     
-                    imie = document.getElementById('imie').value;
-                    nazwisko = document.getElementById('nazwisko').value;
-                    haslo1 = document.getElementById('haslo1').value;
-                    haslo2 = document.getElementById('haslo2').value;
-                    var error='';
+                    
+                    var imie = document.getElementById('imie').value;
+                    var nazwisko = document.getElementById('nazwisko').value;
+                    var haslo1 = document.getElementById('haslo1').value;
+                    var haslo2 = document.getElementById('haslo2').value;
                     if(!imie)
                     {
                         var error = 'Brak imienia';
                         var errorMassage = document.getElementById('error');
                         errorMassage.innerHTML = error;
                     }
-                    else
-                    {
+                    
+                    
                         if(!nazwisko)
                     { 
                         var error = 'Brak nazwiska';
@@ -34,8 +33,7 @@ include 'common\zarejestruj.php';
                         errorMassage.innerHTML = error;
                     }
                 
-                    else
-                    {
+                    
                         if(haslo1.length>=8)
                     { 
                         var error = 'Hasło musi mieć conajmniej 8 znaków';
@@ -43,22 +41,23 @@ include 'common\zarejestruj.php';
                         errorMassage.innerHTML = error;
                     }
                 
-                    else
-                    {
+                    
                         if(!haslo1==haslo2)
                     { 
                         var error = 'Hasła nie są takie same';
                         var errorMassage = document.getElementById('error');
                         errorMassage.innerHTML = error;
                     }       
-                    }
+                        
+                                    
+                                    
+                                
+                                
                     
                     if(!error)
                     {                        
                         location.assign('common/zarejestruj.php');
                     }
-                }
-                } 
                 }
             </script>
         </head>
@@ -68,7 +67,7 @@ include 'common\zarejestruj.php';
                             <div class="col-12 text-center h2 mb-5 pt-5">
                                 Zarejestruj
                             </div>
-                            <form name="rejestracja" method="post" action="common/zarejestruj.php" class="form col-6">
+                            <form name="rejestracja" method="post" action="common/zarejestruj.php" onsubmit="return false" class="form col-6">
                                 <div class="row">
                                     <div id="error" class="col-12 mb-4 h3 text-danger">
                                         
@@ -89,7 +88,7 @@ include 'common\zarejestruj.php';
                                         <input type="password" id="haslo2" name="haslo2" name="haslo2" class="form-control" placeholder="Powtórz hasło" >
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <button onclick="() => {event.preventDefault();
+                                        <button onclick="sprawdzanie(); {event.preventDefault();
                                         sprawdzanie();}" type="submit" id="rejestruj" name="rejestracja" class="btn btn-success">Zarejestruj</button>
                                     </div>
                                 </div>

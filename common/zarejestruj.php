@@ -17,8 +17,6 @@ if ($haslo1 == $haslo2) // sprawdzam hasła
                 $conn= $conn->query($sql);
                 echo "Konto zostało utworzone!";
             }
-            else
-             echo "Hasła nie są takie same";
-
         }    
 ?>
+<a href="../projekt.php" class="btn">Wróć</a>
