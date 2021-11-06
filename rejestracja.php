@@ -33,6 +33,7 @@ include 'common\zarejestruj.php';
                         var errorMassage = document.getElementById('error');
                         errorMassage.innerHTML = error;
                     }
+                
                     else
                     {
                         if(haslo1.length>=8)
@@ -41,6 +42,7 @@ include 'common\zarejestruj.php';
                         var errorMassage = document.getElementById('error');
                         errorMassage.innerHTML = error;
                     }
+                
                     else
                     {
                         if(!haslo1==haslo2)
@@ -55,7 +57,8 @@ include 'common\zarejestruj.php';
                     {                        
                         location.assign('common/zarejestruj.php');
                     }
-                    }
+                }
+                } 
                 }
             </script>
         </head>
