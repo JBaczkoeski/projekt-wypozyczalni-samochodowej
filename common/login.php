@@ -17,6 +17,7 @@ if (isset($_POST['zaloguj']))
             }
             else
             {   
+                header('Location: projekt.php');    
             $_SESSION['zalogowany'] = true;
             $_SESSION['email'] = $email;
             
