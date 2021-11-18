@@ -157,8 +157,8 @@ include 'common\read.php';
 												</li>
 											</ul>
 				    					<div class='card-body'>
-		    						<a href='edycja.php' class='card-link btn btn-warning'>Edytuj</a>
-                                    <button onclick="potwierdzanie()" type="button" class='btn btn-danger'>Usuń</button>
+		    						<a href='edycja.php?edytuj=<?php echo $wyn['id']?>' class='card-link btn btn-warning'>Edytuj</a>
+                                    <a href="common\delete.php?usun=<?php echo $wyn['id']?>" onclick="potwierdzanie()" type="button" class='btn btn-danger'>Usuń</a>
 								</div>
 							</div>
 						</div>
