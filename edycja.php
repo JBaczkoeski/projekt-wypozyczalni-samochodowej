@@ -1,6 +1,7 @@
 <?php
 include 'common\bt.php';
 include 'common\navbarA.php';
+include 'common\read.php';
 ?>
 <html>
 <head>
@@ -19,10 +20,6 @@ include 'common\navbarA.php';
 					<div class="container col-8 text-white">
 						<form method="post" action="">
 							<?php
-							$id=$_GET['edytuj'];
-							include 'common\dbconn.php';
-							$sql="SELECT * FROM `offers` WHERE `id`='$id'";
-							$results = $conn->query($sql);
 							foreach($results as $key => $wyn){
 							echo"
 							<div class='row justify-content-center text-center'>
