@@ -67,7 +67,7 @@ include 'common\zarejestruj.php';
                             <div class="col-12 text-center h2 mb-5 pt-5">
                                 Zarejestruj
                             </div>
-                            <form name="rejestracja" method="post" action="common/zarejestruj.php" onsubmit="return false" class="form col-6">
+                            <form name="rejestracja" method="post" action="common/zarejestruj.php"  class="form col-6">
                                 <div class="row">
                                     <div id="error" class="col-12 mb-4 h3 text-danger">
                                         
@@ -88,8 +88,7 @@ include 'common\zarejestruj.php';
                                         <input type="password" id="haslo2" name="haslo2" name="haslo2" class="form-control" placeholder="Powtórz hasło" >
                                     </div>
                                     <div class="col-12 mb-4">
-                                        <button onclick="sprawdzanie(); {event.preventDefault();
-                                        sprawdzanie();}" type="submit" id="rejestruj" name="rejestracja" class="btn btn-success">Zarejestruj</button>
+                                        <button type="submit" id="rejestruj" name="rejestracja" class="btn btn-success">Zarejestruj</button>
                                     </div>
                                 </div>
                             </form>

@@ -1,5 +1,4 @@
 	<?php
-  session_start();
   echo'
   <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
   <div class="container col-7">
@@ -20,37 +19,12 @@
         <li class="nav-item">
           <a class="nav-link h5" href="wiadomości.php">Wyślij Wiadomość</a>
         </li>
-        ';?>
-        <?php
-        if(($_SESSION['zalogowany']) == true)
-        {
-          echo'
-          <li class="nav-item">
-          <form method="post" action="common\wylogowanie.php">
-            <button type="submit" class="btn btn-link nav-link h5 text-white">Wyloguj</button>
-          </form>
-        </li>';
-        echo'<div class="text-white ms-5 h5 pt-2">';
-        echo "Zalogowano jako:";
-        echo '<br>';
-        echo $_SESSION['imie'];
-        echo " ";
-        echo $_SESSION['nazwisko'];
-        echo '</div>';
-        }
-        else
-        {
-          echo'
-          <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link h5" href="logowanie.php">Zaloguj</a>
         </li>
-		    <li class="nav-item">
+		<li class="nav-item">
           <a class="nav-link h5" href="rejestracja.php">Zarejestruj się</a>
-        </li>'; 
-        }
-        ?>
-        <?php
-        echo'
+        </li>
   </div>
   </div>
 </nav>
