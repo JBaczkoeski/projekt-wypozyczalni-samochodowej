@@ -30,6 +30,13 @@
             <button type="submit" class="btn btn-link nav-link h5 text-white">Wyloguj</button>
           </form>
         </li>';
+        echo'<div class="text-white ms-5 h5 pt-2">';
+        echo "Zalogowano jako:";
+        echo '<br>';
+        echo $_SESSION['imie'];
+        echo " ";
+        echo $_SESSION['nazwisko'];
+        echo '</div>';
         }
         else
         {
